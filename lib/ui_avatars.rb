@@ -23,15 +23,15 @@ class UIAvatars
 
     query = "?"
     query += "name=#{CGI.escape(name)}" # name is the only mandatory parameter
-    query += "&color=#{CGI.escape(color)}" if color
-    query += "&background=#{CGI.escape(background)}" if background
-    query += "&size=#{CGI.escape(size)}" if size
-    query += "&font-size=#{CGI.escape(font_size)}" if font_size
-    query += "&length=#{CGI.escape(length)}" if length
-    query += "&rounded=#{CGI.escape(rounded)}" if rounded
-    query += "&uppercase=#{CGI.escape(uppercase)}" if uppercase
-    query += "&bold=#{CGI.escape(bold)}" if bold
-    query += "&format=#{CGI.escape(fmt)}" if fmt
+    query += "&color=#{color}" if color
+    query += "&background=#{background}" if background
+    query += "&size=#{size}" if size
+    query += "&font-size=#{font_size}" if font_size
+    query += "&length=#{length}" if length
+    query += "&rounded=#{rounded}" if rounded
+    query += "&uppercase=#{uppercase}" if uppercase
+    query += "&bold=#{bold}" if bold
+    query += "&format=#{fmt}" if fmt
 
     url + query
   end
